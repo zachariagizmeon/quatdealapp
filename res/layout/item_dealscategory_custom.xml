@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/cat_imageView1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:src="@android:drawable/btn_default" />
+
+    <TextView
+        android:id="@+id/cat_textcategoryid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cat_textproductid"
+        android:layout_toRightOf="@+id/cat_imageView1"
+        android:hint="@string/dealsCatgry_custmrid"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cat_textproductid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cat_textname"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/dealsCatgry_productid"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cat_textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cat_textproductid"
+        android:layout_alignTop="@+id/cat_imageView1"
+        android:hint="@string/dealsCatgry_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/cat_textmodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cat_textproductid"
+        android:layout_below="@+id/cat_textcategoryid"
+        android:hint="@string/dealsCatgry_model"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cat_textprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cat_textmodel"
+        android:layout_below="@+id/cat_textmodel"
+        android:hint="@string/dealsCatgry_price"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

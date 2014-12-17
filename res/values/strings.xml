@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QatarDeals</string>
+    <string name="recent_name">TodaysDeals</string>
+    <string name="latest_name">LatestDeals</string>
+    <string name="home_name">qatardeals.com</string>
+    <string name="login_name">EmailId :</string>
+    <string name="login_password">Password :</string>
+    <string name="login_forgotpassword">Forgot Password</string>
+    <string name="logn_new_user">New User</string>
+    <string name="login_log_btn">LOGIN</string>
+    <string name="login_reg_btn">REG HERE</string>
+    <string name="reg_title">ACCOUNT DETAILS :</string>
+    <string name="reg_fname"> First Name*</string>
+    <string name="reg_lname">Last Name*</string>
+    <string name="reg_email">Email*</string>
+    <string name="reg_telephone">Telephone*</string>
+    <string name="reg_fax">Fax</string>
+    <string name="reg_refname">Referral Name</string>
+    <string name="reg_company">Company*</string>
+    <string name="reg_companyid">CompanyId*</string>
+    <string name="reg_address1">Address1*</string>
+    <string name="reg_address2">Address2*</string>
+    <string name="reg_city">City*</string>
+    <string name="reg_postcode">Postcode*</string>
+    <string name="reg_country">Country*</string>
+    <string name="reg_region">Region/State*</string>
+    <string name="reg_password">Password*</string>
+    <string name="reg_con_password">Confirm password*</string>
+    <string name="reg_reg_btn">REGISTER</string>
+    <string name="reg_log_title">Already has account !</string>
+    <string name="reg_login_btn">LOGIN</string>
+    <string name="chpwd_emailid">Enter emailid</string>
+    <string name="chpwd_paswrd">Enter password</string>
+    <string name="chpwd_submt_btn">SUBMIT</string>
+    <string name="shpng_cart">Shopping Cart</string>
+    <string name="deals_name">name</string>
+    <string name="deals_model">model</string>
+    <string name="deals_productid">productid</string>
+    <string name="deals_price">price</string>
+    <string name="dealsCatgry_price">price</string>
+    <string name="dealsCatgry_name">name</string>
+    <string name="dealsCatgry_model">model</string>
+    <string name="dealsCatgry_productid">productid</string>
+    <string name="dealsCatgry_custmrid">customerid</string>
+    <string name="dealsRating_name">name</string>
+    <string name="dealsRating_rating">rating</string>
+    <string name="dealsRating_productid">productid</string>
+    <string name="dealsRating_href">href</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Home</item>
+        <item>Categories</item>
+    </string-array>
+
+</resources>

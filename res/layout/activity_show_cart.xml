@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00ff00"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:text="@string/shpng_cart"
+        android:textColor="#000000"
+        android:textSize="24dip" >
+    </TextView>
+
+    <ListView
+        android:id="@+id/ListViewCatalog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:cacheColorHint="#ffffff"
+        android:choiceMode="multipleChoice"
+        android:clickable="true" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/BtnAddToWishList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wish_list"
+            android:onClick="AddToWishList" />
+
+        <Button
+            android:id="@+id/BtnAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shop_cart"
+            android:onClick="AddToCart" />
+    </LinearLayout>
+
+</LinearLayout>
