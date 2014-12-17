@@ -1,0 +1,4 @@
+quatdealapp
+===========
+
+private project
