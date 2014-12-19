@@ -57,6 +57,10 @@
             android:name=".activites.Activity_deals_byCategory"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".Activity_deals_wishlist"
+            android:label="@string/title_activity_activity_deals_wishlist" >
+        </activity>
     </application>
 
 </manifest>

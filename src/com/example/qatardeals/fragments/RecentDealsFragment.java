@@ -6,15 +6,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.example.qatardeals.R;
-import com.example.qatardeals.activites.Activity_recent_deals;
-import com.example.qatardeals.activites.DealsCustomAdapter;
-import com.example.qatardeals.data.HttpConnectionClient;
-import com.example.qatardeals.data.InternetAccess;
-import com.example.qatardeals.models.ProductClass;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -24,6 +15,15 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.qatardeals.R;
+import com.example.qatardeals.customviews.HorizontalListView;
+import com.example.qatardeals.data.HttpConnectionClient;
+import com.example.qatardeals.data.InternetAccess;
+import com.example.qatardeals.models.ProductClass;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
+import com.qatardeals.adapter.DealsCustomAdapter;
+
 public class RecentDealsFragment  extends Fragment{
 	View view1;
 
@@ -31,7 +31,7 @@ public class RecentDealsFragment  extends Fragment{
 
 	boolean isMobileConn = false;
 	InternetAccess iAccess;
-	ListView lst;
+	HorizontalListView horizontalrecentlist,horizontallatestlist;
 	public RecentDealsFragment() {
 
 	}
@@ -46,16 +46,9 @@ public class RecentDealsFragment  extends Fragment{
 				container, false);
 		iAccess=new InternetAccess(getActivity());
 		productList=new ArrayList<ProductClass>();
-		lst=(ListView)view.findViewById(R.id.recent_deals_list);
-	/*	isMobileConn=iAccess.isOnline();
-		if (isMobileConn=false) 
-		{
-			Toast.makeText(getActivity(), "Mobile data  not connected", Toast.LENGTH_SHORT).show();
-
-		} 
-		else {*/
-			productList=new ArrayList<ProductClass>();
-
+		horizontalrecentlist=(HorizontalListView)view.findViewById(R.id.recent_deals_list);
+		horizontallatestlist=(HorizontalListView)view.findViewById(R.id.latest_deals_list);
+		
 			RequestParams params=new RequestParams();
 			params.put("lan", "1");
 
@@ -84,7 +77,7 @@ public class RecentDealsFragment  extends Fragment{
 						}
 						DealsCustomAdapter adapter=new DealsCustomAdapter(getActivity(),R.layout.item_deals_custom,productList);
 
-						lst.setAdapter(adapter);
+						horizontalrecentlist.setAdapter(adapter);
 					} catch (JSONException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();

@@ -6,14 +6,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.example.qatardeals.R;
-
-import com.example.qatardeals.data.HttpConnectionClient;
-import com.example.qatardeals.data.InternetAccess;
-import com.example.qatardeals.models.ProductClass;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,6 +13,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.example.qatardeals.R;
+import com.example.qatardeals.data.HttpConnectionClient;
+import com.example.qatardeals.data.InternetAccess;
+import com.example.qatardeals.models.ProductClass;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
+import com.qatardeals.adapter.DealsRatingCustomAdapter;
 
 public class Activity_deals_byRating extends Activity{
 	ArrayList<ProductClass> prdctList;

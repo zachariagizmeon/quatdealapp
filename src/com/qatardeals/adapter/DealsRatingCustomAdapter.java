@@ -1,6 +1,12 @@
-package com.example.qatardeals.activites;
+package com.qatardeals.adapter;
 
 import java.util.ArrayList;
+
+
+
+import com.example.qatardeals.R;
+import com.example.qatardeals.models.ProductClass;
+import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,13 +16,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.qatardeals.R;
-import com.example.qatardeals.models.ProductClass;
-import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
-
-public class DealsCustomAdapter extends ArrayAdapter<ProductClass> {
+public class DealsRatingCustomAdapter extends ArrayAdapter<ProductClass> {
 	Context context;
-	public DealsCustomAdapter(Context context, int resource,
+	public DealsRatingCustomAdapter(Context context, int resource,
 			ArrayList<ProductClass> objects) {
 		super(context, resource, objects);
 		this.context=context;
@@ -31,21 +33,23 @@ public class DealsCustomAdapter extends ArrayAdapter<ProductClass> {
 			LayoutInflater inflater=LayoutInflater.from(context);
 			convertView=inflater.inflate(R.layout.item_deals_custom, null);
 			holder=new ProductViewHolder();
-			holder.im_photo=(ImageView) convertView.findViewById(R.id.imageView1);
+			holder.im_thumb=(ImageView) convertView.findViewById(R.id.imageView1);
 			holder.t_name=(TextView) convertView.findViewById(R.id.textname);
 			holder.t_pid=(TextView) convertView.findViewById(R.id.textproductid);
-			holder.t_price=(TextView) convertView.findViewById(R.id.textprice);
-			holder.t_model=(TextView) convertView.findViewById(R.id.textmodel);
+			holder.t_rating=(TextView) convertView.findViewById(R.id.textprice);
+			holder.t_href=(TextView) convertView.findViewById(R.id.textmodel);
 			convertView.setTag(holder);
 		}else{
 			holder=(ProductViewHolder) convertView.getTag();
 		}
 		ProductClass prodobj=getItem(position);
-	//	UrlImageViewHelper.setUrlDrawable(holder.im_photo, "http://talenweave.com/qatardeals2/image/cache/"+prodobj.getImage());
+		UrlImageViewHelper.setUrlDrawable(holder.im_thumb, "http://talenweave.com/qatardeals2/image/cache/"+prodobj.getImage());
 		holder.t_name.setText(prodobj.getName());
-		holder.t_price.setText(prodobj.getPrice());
+		int ratinG=prodobj.getRating();
+		String rat=Integer.toString(ratinG);
+		holder.t_rating.setText(rat);
 		holder.t_pid.setText(prodobj.getProd_id());
-		holder.t_model.setText(prodobj.getModel());
+		holder.t_href.setText(prodobj.getHref());
 		
 		
 		return convertView;
@@ -53,8 +57,8 @@ public class DealsCustomAdapter extends ArrayAdapter<ProductClass> {
 	}
 	
 	private class ProductViewHolder{
-		ImageView im_photo;
-		TextView t_name,t_price,t_pid,t_model;
+		ImageView im_thumb;
+		TextView t_name,t_rating,t_pid,t_href;
 	}
 
 }

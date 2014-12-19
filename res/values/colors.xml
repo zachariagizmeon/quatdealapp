@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+       <!-- Navigation Slider menu -->
+    <color name="bright_orange">#f75f2b</color>
+    <color name="list_item_title">#B3B8BC</color> <!-- <color name="list_item_title">#fff</color> -->
+    <color name="list_background">#FFF</color> <!-- <color name="list_background">#303030</color> -->
+    <color name="list_background_pressed">#046EA0</color> <!-- <color name="list_background_pressed">#992416</color> -->
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    
+    
+    <color name="water">#EBF4FA</color>
+    <!--  -->
+   <color name="qd_white">#ffffff</color>
+   <color name="qd_black">#000000</color>
+   <color name="qd_light_cyan">#E0FFFF</color>
+   <color name="qd_orange">#EE7202</color>
+    <color name="qd_blue">#046EA0</color>
+    <color name="qd_grey">#F0F2F5</color>
+    <color name="qd_dark_grey">#B3B8BC</color>
+    <color name="qd_crimson">#FD3331</color>
+    <color name="qd_red">#D9534F</color>
+    <color name="qd_overlay">#44B3B8BC</color>
+    <color name="qd_grey_transparent">#44B9B9B9</color>
+    <color name="qd_user">#ffdbc9</color>
+    <color name="qd_gold">#ffc200</color>
+    <color name="qd_lightblue">#CC66FF</color>
+    <color name="qd_ashgrey">#726b68</color>
+    <color name="qd_ligthorange">#ed7202</color>
+    <color name="qd_lavender">#E6E6FA</color>
+    <color name="qd_maroon">#800000</color>
+    <color name="qd_bright_blue">#036fa0</color>
+    <color name="qd_menu_background">#152831</color>
+    <color name="qd_dark_overlay">#B3000000</color>
+     <color name="qd_highdark_overlay">#DD000000</color>
+    
+</resources>

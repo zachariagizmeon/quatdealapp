@@ -1,29 +1,64 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/searchicon"
+        app:showAsAction="always" 
+        android:title="Search"/>
+    <item
+        android:id="@+id/my_cart"
+        android:orderInCategory="1"
+        android:icon="@drawable/my_cart"
+        app:showAsAction="always"
+        android:title="My Cart"/>
+    <item
+        android:id="@+id/my_referafriend"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Refer a friend"/>
     <item
         android:id="@+id/my_wishlist"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="View Profile"/>
-    <item
-        android:id="@+id/my_cart"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="View Request"/>
+        android:title="My Wishlist"/>
     <item
         android:id="@+id/my_account"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="Update"/>
-    <item
-        android:id="@+id/checkout"
+        android:title="My Account"/>
+     <item
+        android:id="@+id/myorder"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="Next Donation"/>
-    <item
+        android:title="My Order"/>
+      <item
+        android:id="@+id/language"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Language"/>
+     <item
+        android:id="@+id/contactus"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Contact us"/>
+     <item
+        android:id="@+id/information"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Information"/>
+     <item
         android:id="@+id/logout"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="Change Password"/>
-
+        android:title="Logout"/>
+<item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:showAsAction="never"/>
+<item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:title="@string/action_refresh"
+        android:showAsAction="never"/>
 </menu>

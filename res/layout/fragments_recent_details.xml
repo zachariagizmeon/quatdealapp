@@ -1,33 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:scrollbars="none">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:paddingLeft="7dp"
+    android:paddingTop="10dp"
+    android:paddingRight="7dp"
+    android:paddingBottom="10dp"
+    android:background="@color/qd_light_cyan">
 
-    <TextView
-        android:id="@+id/recent_txt_head"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/recent_name"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <ListView
-        android:id="@+id/recent_deals_list"
+    <LinearLayout
+        android:id="@+id/recent_linear"
         android:layout_width="match_parent"
-        android:layout_height="200dp" >
-    </ListView>
-
-    <TextView
-        android:id="@+id/latest_txt_head"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/latest_name"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <ListView
-        android:id="@+id/latest_deals_list"
+        android:layout_height="250dp"
+        android:orientation="vertical" 
+        android:background="@drawable/background_with_shadow">
+        
+		<LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp" >
-    </ListView>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:padding="5dp"
+        android:weightSum="1.0"
+        android:background="@drawable/inner_head">
+        <TextView
+            android:id="@+id/recent_txt_head"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:text="@string/recent_name"
+            android:textColor="@color/qd_black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="time"
+            android:layout_weight=".2"
+            android:textColor="@color/qd_black"
+            android:textSize="17sp"/>
+        </LinearLayout>
+
+        <com.example.qatardeals.customviews.HorizontalListView
+            android:id="@+id/recent_deals_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:adjustViewBounds="true"
+            android:divider="#878787"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/latest_linear"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical" 
+        android:layout_marginTop="7dp"
+        android:background="@drawable/background_with_shadow">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:padding="5dp"
+        android:background="@drawable/inner_head">
+        <TextView
+            android:id="@+id/latest_txt_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/latest_name"
+            android:textColor="@color/qd_black"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+</LinearLayout>
+        <com.example.qatardeals.customviews.HorizontalListView
+            android:id="@+id/latest_deals_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:adjustViewBounds="true"
+            android:divider="#878787"
+            android:padding="5dp"/>
+    </LinearLayout>
 
 </LinearLayout>
+</ScrollView>

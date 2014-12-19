@@ -15,12 +15,13 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.qatardeals.R;
-
 import com.example.qatardeals.data.HttpConnectionClient;
 import com.example.qatardeals.data.InternetAccess;
 import com.example.qatardeals.models.ProductClass;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
+import com.qatardeals.adapter.DealsCustomAdapter;
+import com.qatardeals.adapter.DealsPriceCustomAdapter;
 
 public class Activity_deals_byPrice extends Activity{ 
 

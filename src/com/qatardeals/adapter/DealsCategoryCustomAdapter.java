@@ -1,10 +1,6 @@
-package com.example.qatardeals.activites;
+package com.qatardeals.adapter;
 
 import java.util.ArrayList;
-
-import com.example.qatardeals.R;
-import com.example.qatardeals.models.ProductClass;
-import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,6 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.qatardeals.R;
+import com.example.qatardeals.models.ProductClass;
+import com.koushikdutta.urlimageviewhelper.UrlImageViewHelper;
 
 public class DealsCategoryCustomAdapter extends ArrayAdapter<ProductClass> {
 Context context;

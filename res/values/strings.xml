@@ -49,10 +49,22 @@
     <string name="dealsRating_productid">productid</string>
     <string name="dealsRating_href">href</string>
     <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
 
-    <string-array name="navigation_drawer_items_array">
+    <!-- Navigation Drawer -->
+    <string-array name="nav_drawer_items">
         <item>Home</item>
         <item>Categories</item>
+        <item>Desktpos</item>
+        <item>Laptops</item>
+        <item>Notebooks</item>
+        <item>Components</item>
+        <item>Tablets</item>
+        <item>Softwares</item>
     </string-array>
+
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_activity_deals_wishlist">Activity_deals_wishlist</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
